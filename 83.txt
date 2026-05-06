@@ -1,0 +1,20 @@
+import re
+n = int(input())
+pattern = r"^[7-9][0-9]{9}$"
+for _ in range(n):
+    phoneno = input()
+    if re.match(pattern, str(phoneno)):
+        print("YES")
+    else:
+        print("NO")
+
+Input (stdin)
+2
+9587456281
+1252478965
+Your Output (stdout)
+YES
+NO
+Expected Output
+YES
+NO
