@@ -1,0 +1,25 @@
+import re
+
+if __name__ == "__main__":
+    s = input()
+    m = None
+
+    for i, c in enumerate(s):
+        if c.isalnum():
+            pattern = re.compile(f'{c}'+r'{2,}')
+            m = pattern.search(s,i)
+            if m is not None:
+                print(c)
+                break
+    
+    if m is None:
+        print(-1)
+
+Output:
+
+Input (stdin)
+12345678910111213141516171820212223
+Your Output (stdout)
+1
+Expected Output
+1
