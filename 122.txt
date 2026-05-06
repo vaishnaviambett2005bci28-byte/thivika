@@ -1,0 +1,12 @@
+import numpy
+p = list(map(float, input().split()))
+x = int(input())
+print(numpy.polyval(p,x))
+
+Input (stdin)
+1.1 2 3
+0
+Your Output (stdout)
+3.0
+Expected Output
+3.0

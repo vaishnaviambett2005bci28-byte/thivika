@@ -1,0 +1,20 @@
+import numpy
+
+n = int(input())
+A = [list(map(int, input().split())) for i in range(n)]
+B = [list(map(int, input().split())) for i in range(n)]
+    
+print(numpy.dot(A, B))
+
+Input (stdin)
+2
+1 2
+3 4
+1 2
+3 4
+Your Output (stdout)
+[[ 7 10]
+ [15 22]]
+Expected Output
+[[ 7 10]
+ [15 22]]

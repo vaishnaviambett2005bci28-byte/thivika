@@ -1,0 +1,16 @@
+import numpy
+
+n = int(input())
+A = []
+for _ in range(n):
+    A.append(list(map(float, input().split(' '))))
+print(round(numpy.linalg.det(A), 2))
+
+Input (stdin)
+2
+1.1 1.1
+1.1 1.1
+Your Output (stdout)
+0.0
+Expected Output
+0.0

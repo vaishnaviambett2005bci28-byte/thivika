@@ -1,0 +1,18 @@
+import numpy
+
+A = numpy.array(list(map(int, input().split())))
+B = numpy.array(list(map(int, input().split())))
+print(numpy.inner(A,B))
+print(numpy.outer(A,B))
+
+Input (stdin)
+0 1
+2 3
+Your Output (stdout)
+3
+[[0 0]
+ [2 3]]
+Expected Output
+3
+[[0 0]
+ [2 3]]

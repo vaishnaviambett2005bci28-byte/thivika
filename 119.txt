@@ -1,0 +1,23 @@
+import numpy
+n,m = map(int,input().split())
+arr = []
+for _ in range(n):
+    arr.append(list(map(int, input().split())))
+mat = numpy.array(arr)
+print(numpy.mean(mat, axis=1))
+print(numpy.var(mat, axis=0))
+print(round(numpy.std(mat, axis=None),11))
+
+Input (stdin)
+2 2
+1 2
+3 4
+Your Output (stdout)
+[1.5 3.5]
+[1. 1.]
+1.11803398875
+Expected Output
+[1.5 3.5]
+[1. 1.]
+1.11803398875
+BlogScoringEnvironmentFAQAbout UsHelpdeskCareersTerms Of ServicePrivacy Policy
