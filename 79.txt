@@ -1,0 +1,16 @@
+s = input().strip()
+pattern = r"(?<=[^aeiou\W\d_])([aeiou]{2,})(?=[^aeiou\W\d_])"
+m = re.findall(pattern, s, flags=re.IGNORECASE)
+
+if m:
+    for cs in m:
+            print(cs)
+else:
+     print(-1)
+
+Output:
+
+ee
+Ioo
+Oeo
+eeeee
