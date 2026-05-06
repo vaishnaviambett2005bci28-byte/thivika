@@ -1,0 +1,31 @@
+import re
+def validateUID(uid):
+    caps = r".*(?:[A-Z]).*(?:[A-Z]).*"    
+    digits = r".*(?:[0-9]).*(?:[0-9]).*(?:[0-9]).*"
+    if len(uid)>10:
+        return "Invalid"
+    if not uid.isalnum():
+        return "Invalid"
+    if sorted(list(uid))!=sorted(set(uid)):
+        return "Invalid"
+    if not re.match(caps,uid):
+        return "Invalid"
+    if not re.match(digits,uid):
+        return "Invalid"    
+    return "Valid"
+
+
+for _ in range(int(input())):
+    inp = input()
+    print(validateUID(inp))
+
+Input (stdin)
+2
+B1CD102354
+B1CDEF2354
+Your Output (stdout)
+Invalid
+Valid
+Expected Output
+Invalid
+Valid

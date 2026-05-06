@@ -1,0 +1,21 @@
+output_string=""
+for i in range(0,m):
+    for j in range(0,n):
+        output_string += matrix[j][i]
+
+pattern = r"(?<=[a-zA-Z])[^a-zA-Z]+(?=[a-zA-Z])"
+print(re.sub(pattern," ",output_string))
+
+Sample Input 0
+
+7 3
+Tsi
+h%x
+i #
+sM 
+$a 
+#t%
+ir!
+Sample Output 0
+
+This is Matrix#  %!
