@@ -1,0 +1,16 @@
+import numpy
+numpy.set_printoptions(legacy='1.13')
+N, M = map(int, input().split())
+print(numpy.eye(N,M))
+
+Input (stdin)
+3 3
+Your Output (stdout)
+[[ 1.  0.  0.]
+ [ 0.  1.  0.]
+ [ 0.  0.  1.]]
+Expected Output
+[[ 1.  0.  0.]
+ [ 0.  1.  0.]
+ [ 0.  0.  1.]]
+BlogScoringEnvironmentFAQAbout UsHelpdeskCareersTerms Of ServicePrivacy Policy

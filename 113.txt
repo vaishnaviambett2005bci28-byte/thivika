@@ -1,0 +1,46 @@
+import numpy
+
+if __name__ == "__main__":
+    x = tuple(map(int,input().split()))
+    zeros_arr = numpy.zeros(x,int)
+    ones_arr = numpy.ones(x,int)
+    print(zeros_arr, ones_arr, sep="\n")
+
+Input (stdin)
+3 3 3
+Your Output (stdout)
+[[[0 0 0]
+  [0 0 0]
+  [0 0 0]]
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]]
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]]]
+[[[1 1 1]
+  [1 1 1]
+  [1 1 1]]
+ [[1 1 1]
+  [1 1 1]
+  [1 1 1]]
+ [[1 1 1]
+  [1 1 1]
+  [1 1 1]]]
+Expected Output
+[[[0 0 0]
+  [0 0 0]
+  [0 0 0]]
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]]
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]]]
+[[[1 1 1]
+  [1 1 1]
+  [1 1 1]]
+ [[1 1 1]
+  [1 1 1]
+  [1 1 1]]
+ [[1 1 1]{-truncated-}
