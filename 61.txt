@@ -1,0 +1,11 @@
+for i in range(1, int(input())): print((i) * (10 ** i - 1)//9)
+
+Output:
+
+Input (stdin)
+5
+Your Output (stdout)
+1
+22
+333
+4444
