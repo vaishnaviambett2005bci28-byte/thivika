@@ -1,0 +1,13 @@
+n = int(input())
+arr = list(map(str, input().split()))
+print(all(int(x) > 0 for x in arr) and any(x == x[::-1] for x in arr))
+
+Output:
+
+Input (stdin)
+5
+12 9 61 5 14
+Your Output (stdout)
+True
+Expected Output
+True

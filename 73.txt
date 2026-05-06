@@ -1,0 +1,28 @@
+if __name__ == "__main__":
+    t = int(input())
+    
+    for _ in range(t):
+        s = input().strip()
+    
+        try:
+            _ = float(s)
+            if '.' in s:
+                print(True)
+            else:
+                print(False)
+        except ValueError:
+            print(False)
+
+Output:
+
+Input (stdin)
+4
+4.0O0
+-1.00
++4.54
+SomeRandomStuff
+Your Output (stdout)
+False
+True
+True
+False

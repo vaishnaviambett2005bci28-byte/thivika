@@ -1,0 +1,14 @@
+if __name__ == "__main__":
+    x, k = map(int,input().split())
+    p = input()
+    print(eval(p,{'x':x}) == k)
+
+Output:
+
+Input (stdin)
+1 4
+x**3 + x**2 + x + 1
+Your Output (stdout)
+True
+Expected Output
+True
